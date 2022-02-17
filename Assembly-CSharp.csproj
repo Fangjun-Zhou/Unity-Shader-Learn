@@ -41,8 +41,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <None Include="Assets\Shaders\BasicUnlit.shader" />
-     <None Include="Assets\Shaders\SurfaceShader.shader" />
+     <None Include="Assets\Shaders\Basic\BasicUnlit.shader" />
+     <None Include="Assets\Shaders\Basic\SurfaceShader.shader" />
+     <None Include="Assets\Shaders\Mapping\PlanarMappingWord.shader" />
+     <None Include="Assets\Shaders\Mapping\PanarMapping.shader" />
+     <None Include="Assets\Shaders\Basic\BasicTransparent.shader" />
+     <None Include="Assets\Shaders\Blend\ColorBlend.shader" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Program Files\Unity Editor\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
