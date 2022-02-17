@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <None Include="Assets\Shaders\Mapping\TriplanarMapping.shader" />
      <None Include="Assets\Shaders\Basic\BasicUnlit.shader" />
      <None Include="Assets\Shaders\Basic\SurfaceShader.shader" />
      <None Include="Assets\Shaders\Mapping\PlanarMappingWord.shader" />
