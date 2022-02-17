@@ -31,10 +31,6 @@ Shader "Tutorial/009_Color_Blending/Plain"
                 float4 vertex : SV_POSITION;
             };
 
-            float4 _Color;
-            float4 _BlendColor;
-            float4 _Blend;
-
             v2f vert (appdata v)
             {
                 v2f o;
@@ -42,10 +38,14 @@ Shader "Tutorial/009_Color_Blending/Plain"
                 o.uv = v.uv;
                 return o;
             }
+            
+            float4 _Color;
+            float4 _BlendColor;
+            float _BlendVal;
 
             fixed4 frag (v2f i) : SV_Target
             {
-                float4 col = lerp(_Color, _BlendColor, _Blend);
+                float4 col = lerp(_Color, _BlendColor, _BlendVal);
                 return col;
             }
             ENDCG
